@@ -133,7 +133,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .posicion1 {
   position: fixed;
-  bottom: 3.5%;
+  bottom: 3%;
   z-index: 4;
 
 }
@@ -160,14 +160,12 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .prestamo {
   position: relative;
-  padding: 8px 20px;
+  padding: 5px 12px;
   margin: 0.3125rem 1px;
-  font-size: .75rem;
-  font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 600;
   line-height: 1.428571;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0;
+  letter-spacing: 2px;
   background-color: #ef7a2c
 }
 
