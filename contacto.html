@@ -18,7 +18,7 @@
     <link href="./assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    
+
     <link href="./assets/css/estilo.css" rel="stylesheet" />
     <link href="./assets/scss/range.scss" rel="stylesheet" />
 </head>
@@ -40,14 +40,12 @@
                             data-original-title="Like us on Facebook" rel="nofollow">
                             <i class="fa fa-facebook-square"></i>
                         </a>
-
                         <a class="nav-link redes" data-placement="bottom" href="https://www.instagram.com/presta.guita/"
                             data-original-title="Follow us on Instagram" rel="nofollow" target="_blank">
                             <i class="fa fa-instagram"></i>
                         </a>
                     </div>
                 </div>
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
@@ -91,11 +89,12 @@
             </div>
         </div>
     </nav>
-    <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/faq.jpg')"></div>
-   
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/faq.jpg')">
+    </div>
+
     <div class="main main-raised">
         <div class="container">
-            <section>
+            <!-- <section>
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
                         <div class="posicion">
@@ -113,103 +112,148 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <section>
                 <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
+                    <div class="col-md-8 ml-auto mr-auto offset-md-2">
                         <h2 class="text-center title text-warning">Contactanos</h2>
                         <form id="formulario" name="formContacto" method="post" action="enviar.php">
-                            <div class="col-lg-6 col-sm-4">
+                            <div class="col-lg-8 offset-lg-2">
                                 <div class="form-group">
-                                    <label for="exampleInput1" class="bmd-label-floating">Nombre</label>
-                                    <input type="email" class="form-control" id="nombre" name="nombre" type="text"
-                                        required>
+                                    <label class="bmd-label-floating">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
                                     <span class="bmd-help">Ingresa tu nombre.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">Apellido</label>
+                                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                                    <span class="bmd-help">Ingresa tu apellido.</span>
                                 </div>
                                 <div class="form-check"> Sexo: &nbsp &nbsp
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        Masculino
+                                        <input class="form-check-input" type="radio" name="sexo" id="sexo"
+                                            value="Femenino">
+                                        Femenino
                                         <span class="circle">
                                             <span class="check"></span>
                                         </span> &nbsp&nbsp&nbsp&nbsp&nbsp
                                     </label>
-                               
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                                        femenino
+                                        <input class="form-check-input" type="radio" name="sexo" id="sexo"
+                                            value="Masculino">
+                                        Masculino
                                         <span class="circle">
                                             <span class="check"></span>
                                         </span>
                                     </label>
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleInput1" class="bmd-label-floating">DNI</label>
+                                    <input type="number" class="form-control" id="dni" name="dni" required>
+                                    <span class="bmd-help">Ingresa tu DNI.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInput1" class="bmd-label-floating">Celular</label>
+                                    <input type="number" class="form-control" id="celular" name="celular" required>
+                                    <span class="bmd-help">Ingresa tu celular.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInput1" class="bmd-label-floating">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <span class="bmd-help">Ingresa tu Email.</span>
+                                </div>
+                                <div class="form-check"> Ocupación:<br><br>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
+                                            value="Trabajo informal ">
+                                        Trabajo informal
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
+                                            value="Empleo privado">
+                                        Empleo privado
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
+                                            value="Empleo público">
+                                        Empleo público
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
+                                            value="Jubilado/Pensionado">
+                                        Jubilado/Pensionado
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
+                                            value="Monotributista/Autónomo">
+                                        Monotributista/Autónomo
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
+                                            value="Beneficiario Asignación">
+                                        Beneficiario Asignación
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
+                                            value="Comerciante">
+                                        Comerciante
+                                        <span class="circle">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInput1" class="bmd-label-floating">Localidad</label>
+                                    <input type="text" class="form-control" id="localidad" name="localidad" required>
+                                    <span class="bmd-help">Ingresa tu localidad.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInput1" class="bmd-label-floating">$</label>
+                                    <input type="number" class="form-control" id="monto" name="monto" required minlength="5000" maxlength="30000">
+                                    <span class="bmd-help">Ingresa el monto de dinero solicitado (5000 a 30000).</span>
+                                </div>
                             </div>
-                           
-                        </form>             
-
-
-                                            <!-- <label for="credito">Monto estimado de cr&eacute;dito:</label>
-                                           <input type="radio" id="credito" name="credito" value="1,500,000 - 2,000,000">1,500,000 -
-                                    2,000,000<br>
-                                       <input type="radio" id="credito" name="credito" value="2,000,000 - 2,500,000">2,000,000 -
-                                    2,500,000<br>
-                                        <input type="radio" id="credito" name="credito" value="2,500,000 en adelante">2,500,000 en
-                                    adelante<br><br> -->
-                        
-
-
-
-
-                    <!-- <form class="col s12 m8" id="formulario" name="formContacto" method="post" action="enviar.php">
-                        <div class="row">
-                            <div class="input-field col s6 center">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="nombre" name="nombre" type="text" class="validate" required>
-                                <label for="nombre ">Nombre</label>
-                            </div>
-                            <div class="input-field col s6 center">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="apellido" name="apellido" type="text" class="validate" required>
-                                <label for="apellido">Apellido</label>
-                            </div>
-                            <div class="input-field col s6 center ">
-                                <i class="material-icons prefix">phone</i>
-                                <input id="telefono" name="telefono" type="tel" class="validate" required>
-                                <label for="telefono">Telefono</label>
-                            </div>
-                            <div class="input-field col s6 center">
-                                <i class="material-icons prefix">email</i>
-                                <input id="email" name="email" type="tel" class="validate" required>
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="input-field col s6 center">
-                                <i class="material-icons prefix">contact_mail</i>
-                                <input id="dni" name="dni" type="tel" class="validate" required>
-                                <label for="dni">DNI</label>
-                            </div>
-                            <div class="input-field col s6 center">
-                                <i class="material-icons prefix">contact_mail</i>
-                                <input id="Cuil" name="cuil" type="tel" class="validate" required>
-                                <label for="cuil">Cuil</label>
-                            </div>
-                            <div class="row center">
-                                <button class="btn waves-effect waves-light orange lighten-1" type="submit" id="boton"
+                            <div class="text-center espacioTitulo">
+                                <button class="btn color btn-warning" type="submit" id="boton"
                                     value="Enviar">Enviar</button>
                             </div>
-                        </div>
-                    </form> -->
-                   
-            
-             </section>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-
-
-   
-   
-
-
     <footer class="footer footer-default">
         <div class="container">
             <nav class="float-left">

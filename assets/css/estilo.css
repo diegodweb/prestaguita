@@ -39,9 +39,9 @@
   margin-right: 15px;
 }
 
-/* .active:before {
+ .active:before {
   content: "\2212";
-} */
+} 
 
 .panel {
   padding: 0 18px;
@@ -304,3 +304,15 @@ input[type=range]::-webkit-slider-runnable-track {
 
   border-radius: 0.4rem;
 }
+
+.form-check{
+  padding-top: 27px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
