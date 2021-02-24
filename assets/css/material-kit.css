@@ -11636,9 +11636,8 @@ a .material-icons {
   z-index: 3;
 }
 
-.form-check,
-label {
-  font-size: 14px;
+.form-check, label {
+  font-size: 1.1rem;
   line-height: 1.42857;
   color: #AAAAAA;
   font-weight: 400;
@@ -14155,7 +14154,7 @@ fieldset[disabled][disabled] .has-rose .form-control,
 .bmd-form-group .checkbox label,
 .bmd-form-group .radio label,
 .bmd-form-group label {
-  font-size: 0.875rem;
+  font-size: 1.1rem;
 }
 
 .bmd-form-group .bmd-label-floating,
@@ -14178,7 +14177,7 @@ fieldset[disabled][disabled] .has-rose .form-control,
 
 .bmd-form-group .bmd-help {
   margin-top: 0;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .bmd-form-group .form-control.form-control-success,
@@ -14383,7 +14382,7 @@ label.checkbox-inline,
 .checkbox label,
 .radio label,
 label {
-  font-size: 0.875rem;
+  font-size: 1.1rem;
 }
 
 .bmd-label-floating,
@@ -14406,7 +14405,7 @@ label {
 
 .bmd-help {
   margin-top: 0;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .form-control.form-control-success,
