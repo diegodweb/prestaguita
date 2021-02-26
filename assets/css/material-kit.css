@@ -18592,7 +18592,8 @@ footer .pull-center {
     content: "";
     z-index: 1029;
     overflow-x: hidden;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
   }
 
   #navbar .navbar-collapse,
