@@ -363,13 +363,48 @@ input[type=number] { -moz-appearance:textfield; }
 
 
 select {
+  content:"\025be";
   display:flex;
   position:relative;
-  width:220px;
+  width:295px;
   height:30px;
   border-color: #aaa;
   border-radius:  5px;
   color: #aaa;
 }
 
+.caja {
+   
+   border:1px solid #aaa;
+   border-radius:  5px;
+   height:35px;
+   overflow: hidden;
+   width: 295px;
+   position:relative;
+}
+select {
+   background: white;
+   border: none;
+   font-size: 14px;
+   height: 35px;
+   padding-bottom: 2px;
+   padding-left: 5px;
+   width: 295px;
+   
+}
+select:focus{ outline: none;}
 
+.caja::after{
+	content:"\025be";
+	display:table-cell;
+	padding-top:6px;
+	text-align:center;
+  font-size:25px;
+  color: #ef7a2c;
+	position:absolute;
+	top:0;
+	right:0px;	
+	pointer-events: none;
+}
+
+ 
