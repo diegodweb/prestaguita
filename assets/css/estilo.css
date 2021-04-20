@@ -387,11 +387,11 @@ select {
 select {
    background: white;
    border: none;
-   font-size: 14px;
+   font-size:17.6px;
    height: 35px;
    padding-bottom: 2px;
    padding-left: 5px;
-   width: 277px;
+   width: 295px;
    
 }
 select:focus{ outline: none;}
@@ -401,17 +401,24 @@ select:focus{ outline: none;}
 	display:table-cell;
 	padding-top:6px;
 	text-align:center;
-  font-size:25px;
+  font-size:2rem;
   color: #ef7a2c;
 	position:absolute;
 	top:0;
-	right:0px;	
+	right:5px;	
 	pointer-events: none;
 }
 
 .ScrollStyle
 {
-    max-height: 150px;
+    max-height: 300px;
     overflow-y: scroll;
+    border: 1px solid #aaa;
+    border-radius: 5px; 
+}
+
+.ScrollStyle p{
+  font-size: 12px;
+  padding: 5px;
 }
  
