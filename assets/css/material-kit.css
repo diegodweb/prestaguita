@@ -12246,7 +12246,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 }
 
 .form-check .form-check-input:checked~.form-check-sign .check {
-  background: #9c27b0;
+  background: #ef7a2c;
 }
 
 .form-check .form-check-input:checked~.form-check-sign .check:before {
@@ -15484,7 +15484,7 @@ h2.title {
 .description,
 .card-description,
 .footer-big p {
-  color: #999;
+  color: #000;
 }
 
 .text-warning {
@@ -18269,7 +18269,7 @@ footer .pull-center {
 }
 
 .index-page h4.description {
-  font-size: 1.5em;
+  font-size: 1.125rem;
 }
 
 .section {

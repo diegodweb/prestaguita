@@ -15,12 +15,12 @@
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
-    <link href="./assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+    <link href="./assets/css/material-kit.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="./assets/css/selectbox.min.css" rel="stylesheet" />
+
     <link href="./assets/css/estilo.css" rel="stylesheet" />
-    <link href="./assets/scss/range.scss" rel="stylesheet" />
+    
 </head>
 
 <body class="faq-page sidebar-collapse">
@@ -89,6 +89,17 @@
             </div>
         </div>
     </nav>
+    <div class="posicion">
+        <a href="whatsapp://send?text=Hola, estoy interesado en un prestamo &phone=+5491126654754&abid=+5491126654754"
+          class="btn btn-fab whatsapp btn-success btn-round" data-aos="zoom-in-up" data-aos-duration="900">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+      </div>
+      <div class="posicion2">
+        <a href="tel:+541126654754" class="btn btn-fab telefono btn-round" data-aos="zoom-in-up" data-aos-duration="900">
+          <i class="fa fa-phone"></i>
+        </a>
+      </div>
     <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/faq.jpg')">
     </div>
 
@@ -240,22 +251,22 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="cars">Localidad:</label>
-                                <select name="localidad" id="loca">
-                                    <option value="" disabled selected>Seleccione una localidad</option>
-                                    <option value="volvo">localidad1</option>
-                                    <option value="saab">localidad2</option>
-                                    <option value="opel">localidad3</option>
-                                    <option value="audi">localidad4</option>
-                                </select>
+                                    <select name="localidad" id="loca">
+                                        <option value="" disabled selected>Seleccione una localidad</option>
+                                        <option value="volvo">localidad1</option>
+                                        <option value="saab">localidad2</option>
+                                        <option value="opel">localidad3</option>
+                                        <option value="audi">localidad4</option>
+                                    </select>
                                 </div>
 
                                 <div class="caja">
                                     <select>
-                                      <option>La primera opción</option>
-                                      <option>La segunda opción</option>
-                                      <option>La tercera opción</option>
+                                        <option>La primera opción</option>
+                                        <option>La segunda opción</option>
+                                        <option>La tercera opción</option>
                                     </select>
-                                  </div>
+                                </div>
 
                                 <div class="form-group">
                                     <label for="exampleInput1" class="bmd-label-floating">$</label>
@@ -263,10 +274,36 @@
                                         minlength="5000" maxlength="50000">
                                     <span class="bmd-help">Ingresa el monto de dinero solicitado (5000 a 50000).</span>
                                 </div>
+
+                                <div class="ScrollStyle">
+                                    Scrollbar Test!<br/>
+                                    Scrollbar Test!<br/>
+                                    Scrollbar Test!<br/>
+                                    Scrollbar Test!<br/>
+                                    Scrollbar Test!<br/>
+                                    Scrollbar Test!<br/>
+                                    Scrollbar Test!<br/>
+                                    Scrollbar Test!<br/>
+                                    Scrollbar Test!<br/>
+                                    Scrollbar Test!<br/>
+                                  </div>
+                                
+
                             </div>
                             <div class="text-center espacioTitulo">
-                                <button class="btn color btn-warning" type="submit" id="boton"
-                                    value="Enviar">Enviar</button>
+
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input termino" type="checkbox"  name="checkbox" id="checkDatos">
+                                      acepto los terminos
+                                      <span class="form-check-sign">
+                                        <span class="check"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                
+                                <button class="btn color btn-warning" type="submit" id="btnconttaval"
+                                    value="Enviar" disabled>Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -309,8 +346,8 @@
             </div>
         </div>
     </footer>
-    <!--   Core JS Files   -->
 
+    <!--   Core JS Files  -->
     <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
@@ -323,9 +360,9 @@
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="./assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./assets/js/selectbox.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
+    
 
     <script>
         var acc = document.getElementsByClassName("accordion");
@@ -343,7 +380,22 @@
             });
         }
     </script>
+    <script>
+        const $inputchec = document.querySelector('.termino')
+$inputchec.addEventListener('click', function() {
+  const seleccion = document.getElementsByName("checkbox");
+  for (var i = 0; i < seleccion.length; i++) {
+    if (seleccion[i].checked == true) {
+      document.getElementById("btnconttaval").disabled = false;
+      break;
+    } else {
+      document.getElementById("btnconttaval").disabled = true;
+    }
+  }
+});
+    </script>
 
+    
 </body>
 
 </html>

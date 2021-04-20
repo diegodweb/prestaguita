@@ -86,21 +86,22 @@
   </nav>
   <div class="posicion">
     <a href="whatsapp://send?text=Hola, estoy interesado en un prestamo &phone=+5491126654754&abid=+5491126654754"
-      class="btn btn-fab whatsapp btn-success btn-round" data-aos="zoom-in-up" data-aos-duration="1000">
+      class="btn btn-fab whatsapp btn-success btn-round" data-aos="zoom-in-up" data-aos-duration="900">
       <i class="fa fa-whatsapp"></i>
     </a>
   </div>
   <div class="col-12 posicion1 text-center">
     <a href="contacto.html" class="btn btn-round prestamo btn btn-warning" data-aos="fade-zoom-in"
-      data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="800">
+      data-aos-easing="ease-out-cubic" data-aos-duration="900" data-aos-delay="100">
       PEDI TU PRESTAMO!
     </a>
   </div>
   <div class="posicion2">
-    <a href="tel:+541126654754" class="btn btn-fab telefono btn-round" data-aos="zoom-in-up" data-aos-duration="1000">
+    <a href="tel:+541126654754" class="btn btn-fab telefono btn-round" data-aos="zoom-in-up" data-aos-duration="900">
       <i class="fa fa-phone"></i>
     </a>
   </div>
+  <!-- 
   <div class="page-header header-filter ocultar-div" data-parallax="true" style="background-image: url('assets/img/portada3.jpg')">
     <div class="container">
       <div class="row">
@@ -112,36 +113,29 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="page-header  ocultar" data-parallax="true">
-    
-          <div class="card card-raised card-carousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-               
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="./assets/img/HomePage 1 (alta).jpg" alt="First slide">
-                  <div class="carousel-caption d-none d-md-block">
-                   
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./assets/img/HomePage 2 (alta).jpg" alt="Second slide">
-                  <div class="carousel-caption d-none d-md-block">
-                    
-                  </div>
-                </div>
-                
-              </div>
-              
+  </div> -->
+  <div class="page-header" data-parallax="true">
+    <div class="card card-raised card-carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/img/slide1_pc_150dpi.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
-          
-     
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/slide2_pc_150dpi.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/slide3_pc_150dpi.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="main main-raised">
     <div class="container">
@@ -149,18 +143,18 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="title text-warning">Simulador de préstamo</h2>
-            <h5 class="description">En esta sección podés calcular la cuota a pagar de acuerdo al monto buscado y la
-              manera que te sea más cómoda.</h5>
+            <h4 class="description">En esta sección podés calcular la cuota a pagar de acuerdo al monto buscado y la
+              manera que te sea más cómoda.</h4>
             <form class="center">
-              <h3 class="espacioTitulo">¿Cuánto necesitas?</h3>
+              <h3 class="espacioTitulo">Cuánto dinero andás buscando?</h3>
               <div class="range-slider"
-                style='--min:5000; --max:30000; --step:1000; --value:10000; --text-value:"10000"; --prefix:"$"'>
-                <input type="range" min="5000" max="30000" step="1000" value="10000" name="importe"
+                style='--min:5000; --max:50000; --step:1000; --value:10000; --text-value:"10000"; --prefix:"$"'>
+                <input type="range" min="5000" max="50000" step="1000" value="10000" name="importe"
                   oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
                 <output></output>
                 <div class='range-slider__progress'></div>
               </div>
-              <h3 class="espacioTitulo">¿En Cuántas semanas?</h3>
+              <h3 class="espacioTitulo">¿Cuántas semanas necesitás?</h3>
               <div class="range-slider" style='--min:4; --max:12; --step:1; --value:6; --text-value:"6";'>
                 <input type="range" min="4" max="12" step="1" value="6" name="anos"
                   oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify((+this.value).toLocaleString()))">
@@ -185,57 +179,60 @@
           <div class="col-md-8 ml-auto mr-auto ">
             <h2 class="text-center title text-warning">¿Cómo funciona?</h2>
 
-        
+
             <ul class="nav nav-pills nav-pills-warning nav-pills-icons" role="tablist">
               <!--
                               color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
                           -->
-                        
-                        <li class="nav-item">
-                          <a class="nav-link" href="#dashboard-1" role="tab" data-toggle="tab">
-                            <i class="material-icons">dashboard</i>
-                            1
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#schedule-1" role="tab" data-toggle="tab">
-                            <i class="material-icons">schedule</i>
-                            2
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">
-                            <i class="material-icons">list</i>
-                            3
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">
-                            <i class="material-icons">list</i>
-                            4
-                          </a>
-                        </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#dashboard-1" role="tab" data-toggle="tab">
+                  <i class="material-icons">dashboard</i>
+                  1
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#schedule-1" role="tab" data-toggle="tab">
+                  <i class="material-icons">schedule</i>
+                  2
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">
+                  <i class="material-icons">list</i>
+                  3
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">
+                  <i class="material-icons">list</i>
+                  4
+                </a>
+              </li>
             </ul>
             <div class="tab-content tab-space text-center">
-              <div class="tab-pane active" id="dashboard-1" >
-                Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
+              <div class="tab-pane active" id="dashboard-1">
+                Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
+                users after installed base benefits.
                 <br><br>
                 Dramatically visualize customer directed convergence without revolutionary ROI.
               </div>
               <div class="tab-pane" id="schedule-1">
-                Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
+                Efficiently unleash cross-media information without cross-media value. Quickly maximize timely
+                deliverables for real-time schemas.
                 <br><br>Dramatically maintain clicks-and-mortar solutions without functional solutions.
               </div>
               <div class="tab-pane" id="tasks-1">
-                Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
+                Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate
+                one-to-one customer service with robust ideas.
                 <br><br>Dynamically innovate resource-leveling customer service for state of the art customer service.
               </div>
             </div>
-        
 
 
-           
-              
+
+
+
 
             <!-- Flickity HTML init -->
             <!-- <div class="carousel carousel-main" data-flickity='{ "pageDots": false, "prevNextButtons": false }'>
