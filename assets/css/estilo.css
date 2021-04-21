@@ -374,22 +374,23 @@ select {
   content:"\025be";
   display:flex;
   position:relative;
-  width:295px;
-  height:30px;
+  width:331px;
+  height:35px;
   border-color: #aaa;
   border-radius:  5px;
   color: #aaa;
 }
 
 .caja {
-   
    border:1px solid #aaa;
    border-radius:  5px;
    height:35px;
    overflow: hidden;
-   width: 295px;
+   width: 331px;
    position:relative;
+   
 }
+
 select {
    background: white;
    border: none;
@@ -397,10 +398,12 @@ select {
    height: 35px;
    padding-bottom: 2px;
    padding-left: 5px;
-   width: 295px;
-   
+   width: 331px; 
 }
-select:focus{ outline: none;}
+
+select:focus { 
+  outline: none;
+}
 
 .caja::after{
 	content:"\025be";
@@ -413,6 +416,10 @@ select:focus{ outline: none;}
 	top:0;
 	right:5px;	
 	pointer-events: none;
+}
+
+.form-select{
+  padding-top: 27px;
 }
 
 .ScrollStyle
