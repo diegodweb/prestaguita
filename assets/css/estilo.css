@@ -53,11 +53,15 @@
   margin-left: 0px;
   margin-top: 5px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
   background-color: #ffffff !important;
   box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
 
+}
+
+.panel p{
+  font-size: 16px;
 }
 
 body,
@@ -208,7 +212,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .calculadorFinal {
   background-color: #f4ea62;
-  font-size: 20px;
+  font-size: 18px;
   color: #ef7a2c;
   font-weight: 600;
   height: 2.5rem;
@@ -219,6 +223,13 @@ input[type=range]::-webkit-slider-runnable-track {
   line-height: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 18px 0px rgb(0 0 0 / 12%), 0 7px 10px -5px rgb(0 0 0 / 15%);
+}
+
+#resultado {
+  background-color: #f4ea62;
+  color: #ef7a2c;
+  padding: 2px;
+  font-size: 1.3rem;
 }
 
 .margen {
@@ -269,12 +280,7 @@ input[type=range]::-webkit-slider-runnable-track {
   padding-bottom: 5rem;
 }
 
-#resultado {
-  background-color: #f4ea62;
-  color: #ef7a2c;
-  padding: 2px;
-  font-size: 1.5rem;
-}
+
 
 .espacio {
   padding: 2rem;
@@ -422,3 +428,14 @@ select:focus{ outline: none;}
   padding: 5px;
 }
  
+/* FOOTER */
+
+.footer b{
+  font-size: 11px;
+  color: #ef7a2c;
+}
+
+.footer p{
+  font-size: 11px;
+  
+}
