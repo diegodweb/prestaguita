@@ -280,8 +280,6 @@ input[type=range]::-webkit-slider-runnable-track {
   padding-bottom: 5rem;
 }
 
-
-
 .espacio {
   padding: 2rem;
 }
@@ -300,9 +298,6 @@ input[type=range]::-webkit-slider-runnable-track {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
-
-
 
 .btn.btn-sm,
 .btn-group-sm>.btn,
@@ -428,6 +423,7 @@ select:focus {
     overflow-y: scroll;
     border: 1px solid #aaa;
     border-radius: 5px; 
+    margin-top: 2.5rem;
 }
 
 .ScrollStyle p{
