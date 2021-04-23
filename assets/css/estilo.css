@@ -7,6 +7,10 @@
   width: 10em;
 }
 
+.logo-enviado{
+  width: 15em;
+}
+
 
 .accordion {
   background-color: rgb(247, 247, 247);
@@ -297,6 +301,10 @@ input[type=range]::-webkit-slider-runnable-track {
 .espacioSimulador {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.espacio-enviado {
+  padding-top: 10rem;
 }
 
 .btn.btn-sm,
