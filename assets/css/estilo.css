@@ -307,6 +307,11 @@ input[type=range]::-webkit-slider-runnable-track {
   padding-top: 10rem;
 }
 
+.espacio-tab {
+  margin-top: 2rem;
+}
+
+
 .btn.btn-sm,
 .btn-group-sm>.btn,
 .btn-group-sm .btn {
@@ -449,4 +454,8 @@ select:focus {
 .footer p{
   font-size: 11px;
   
+}
+
+.tab-space {
+  height: 200px;
 }
