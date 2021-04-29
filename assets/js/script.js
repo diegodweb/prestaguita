@@ -45,14 +45,15 @@ input.addEventListener("input", function(evt) {
 
    let deuda = parseFloat(document.querySelector("input[name=importe]").value);
    let anos = parseInt(document.querySelector("input[name=anos]").value);
-   let interes = (179.6 / 100) / 12;
+   //let interes = (205 / 100) / 12;
+   let interes = 0.1 * anos;
    const resultado = document.getElementById("resultado");
 
-   const m = (deuda * interes * (Math.pow((1 + interes), (anos * 1)))) / ((Math.pow((1 + interes), (anos * 1))) - 1);
-
+  // const m = (deuda * interes * (Math.pow((1 + interes), (anos * 1)))) / ((Math.pow((1 + interes), (anos * 1))) - 1);
+   const m =  ((deuda * interes + deuda) / anos)
    resultado.innerHTML = " $" + m.toLocaleString("es-ES", {
-     minimumFractionDigits: 2,
-     maximumFractionDigits: 2
+     minimumFractionDigits: 0,
+     maximumFractionDigits: 0
    }) + "</div>";
  }
 

@@ -215,9 +215,9 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .calculadorFinal {
-  background-color: #f4ea62;
+  background-color: black;
   font-size: 18px;
-  color: #ef7a2c;
+  color: white;
   font-weight: 600;
   height: 2.5rem;
   width: 295px;
@@ -230,8 +230,8 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 #resultado {
-  background-color: #f4ea62;
-  color: #ef7a2c;
+  background-color: black;
+  color: white;
   padding: 2px;
   font-size: 1.3rem;
 }
@@ -257,7 +257,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 @media all and (max-width: 991px) {
   .navbar-collapse .navbar-nav .nav-item .nav-link {
-    color: #ef7a2c;
+    color: black;
     margin: 5px 15px;
   }
 }
@@ -458,4 +458,26 @@ select:focus {
 
 .tab-space {
   height: 200px;
+}
+
+.como-funciona{
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: 2px solid;
+  border-color: #aaa;
+}
+
+.iconos{
+  width: 60px;
+  padding: 2px;
+}
+
+.iconos-2{
+  width: 55px;
+  padding: 5px;
+}
+
+.letra-icono{
+  font-size: 20px;
 }

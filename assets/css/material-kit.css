@@ -15272,9 +15272,9 @@ textarea {
 .nav-pills.nav-pills-warning .nav-item .nav-link.active,
 .nav-pills.nav-pills-warning .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-warning .nav-item .nav-link.active:hover {
-  background-color: #ef7a2c;
+  background-color: #f4ea62;
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(255, 152, 0, 0.6);
-  color: #ffffff;
+  color: #ef7a2c;
 }
 
 .nav-pills.nav-pills-danger .nav-item .nav-link.active,
@@ -18445,7 +18445,6 @@ footer .pull-center {
     margin-right: 0 !important;
     z-index: 1032;
     visibility: visible;
-    background-color: #999;
     overflow-y: visible;
     border-top: none;
     text-align: left;
@@ -18470,7 +18469,8 @@ footer .pull-center {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3px);
     display: block;
     content: "";
     z-index: 1;
