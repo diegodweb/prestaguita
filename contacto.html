@@ -2,6 +2,22 @@
 <html>
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-WSMSNKL');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
@@ -24,8 +40,12 @@
 </head>
 
 <body class="faq-page sidebar-collapse">
+    <!-- Google Tag Manager (noscript) -->
 
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSMSNKL" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
 
+    <!-- End Google Tag Manager (noscript) -->
 
     <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100"
         id="sectionsNav">
@@ -175,76 +195,6 @@
                                     <input type="email" class="form-control" id="email" name="email" required>
                                     <span class="bmd-help">Ingresa tu Email.</span>
                                 </div>
-                                <!--  <div class="form-check"> Ocupación:<br><br>
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
-                                            value="Trabajo informal ">
-                                        Trabajo informal
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
-                                            value="Empleo privado">
-                                        Empleo privado
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
-                                            value="Empleo público">
-                                        Empleo público
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
-                                            value="Jubilado/Pensionado">
-                                        Jubilado/Pensionado
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
-                                            value="Monotributista/Autónomo">
-                                        Monotributista/Autónomo
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
-                                            value="Beneficiario Asignación">
-                                        Beneficiario Asignación
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="ocupacion" id="ocupacion"
-                                            value="Comerciante">
-                                        Comerciante
-                                        <span class="circle">
-                                            <span class="check"></span>
-                                        </span>
-                                    </label>
-                                </div> -->
                                 <div class="form-select">
                                     <label class="bmd-label-floating">Ocupación</label>
                                     <div class="caja">
@@ -318,8 +268,10 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInput1" class="bmd-label-floating">$</label>
-                                    <input type="number" class="form-control" id="monto" name="monto" 
-                                        min="5000" max="50000" value= "5000" maxlength="">
+                                    <input type="number" class="form-control" id="monto" name="monto" min="5000"
+                                        max="50000" value="5000" step="1000" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==5 && this.value) return false;">
+                                   
+                                       
                                     <span class="bmd-help">Ingresa el monto de dinero solicitado (5000 a 50000).</span>
                                 </div>
                                 <div class="ScrollStyle">
@@ -519,13 +471,17 @@
             </nav>
             <div class="copyright text-center">
                 &copy;
+                Prestaguita, Buenos Aires
                 <script>
                     document.write(new Date().getFullYear())
-                </script>, Prestaguita.
+                </script>/ Todos los derechos reservados.<br><br>
+                <a href="http://qr.afip.gob.ar/?qr=CBfwpz2dTaoKVtBmBHPaJA,," target="_F960AFIPInfo"><img
+                        src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" class="qr"></a><br><br>
             </div>
         </div>
     </footer>
     <!--   Core JS Files  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
@@ -571,6 +527,34 @@
                 }
             }
         });
+
+        $(document).ready(function(){
+
+const min = 5000;    // Valor mínimo
+const max = 50000; // Valor máximo
+
+// Escuchamos el evento keyup de nuestro input
+$(document).on('keyup', '#monto', function(){
+
+  // Obtenemos el objeto
+  var self = $(this);
+  
+  // Obtenemos el valor actual
+  var value = self.val();
+  
+  // Si el valor obtenido es menor a nuestro valor mínimo
+  // o nuestro valor valor obtenido es mayor a nuestro valor máximo
+  // Le decimos al usuario que no está dentro del rango 
+  // y limpiamos nuestro campo
+  if(value < min || value > max){
+    console.log('El número ingresado no está dentro del rango permitido');
+    self.val('monto incorrecto');
+  }
+  
+})
+
+});
     </script>
 </body>
+
 </html>
