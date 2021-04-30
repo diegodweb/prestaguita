@@ -481,7 +481,7 @@
         </div>
     </footer>
     <!--   Core JS Files  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
@@ -528,31 +528,15 @@
             }
         });
 
-        $(document).ready(function(){
-
-const min = 5000;    // Valor mínimo
-const max = 50000; // Valor máximo
-
-// Escuchamos el evento keyup de nuestro input
-$(document).on('keyup', '#monto', function(){
-
-  // Obtenemos el objeto
-  var self = $(this);
+       // Usamos event-delegation
+$(document).on('input', 'input[type="number"]', function() {
+  var val = Number(this.value),
+    max = 50000;
   
-  // Obtenemos el valor actual
-  var value = self.val();
-  
-  // Si el valor obtenido es menor a nuestro valor mínimo
-  // o nuestro valor valor obtenido es mayor a nuestro valor máximo
-  // Le decimos al usuario que no está dentro del rango 
-  // y limpiamos nuestro campo
-  if(value < min || value > max){
-    console.log('El número ingresado no está dentro del rango permitido');
-    self.val('monto incorrecto');
+  console.log(val, max);
+  if (max < val) {
+    this.value = max;
   }
-  
-})
-
 });
     </script>
 </body>
