@@ -1,6 +1,7 @@
 .logo {
   width: 10em;
   position: absolute;
+  margin-top: -25px;
 }
 
 .logo-web {
