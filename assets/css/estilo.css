@@ -490,3 +490,11 @@ select:focus {
 .copyright{
   font-size: 14px;
 }
+
+.text-gris{
+  color: #999999;
+}
+
+.text-gris:focus{
+  color: #ef7a2c;
+}
